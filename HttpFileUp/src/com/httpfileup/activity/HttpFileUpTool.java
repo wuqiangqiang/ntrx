@@ -32,9 +32,9 @@ public class HttpFileUpTool {
 		conn.setDoOutput(true);// 允许输出
 		conn.setUseCaches(false); // 不允许使用缓存
 		conn.setRequestMethod("POST");
-		conn.setRequestProperty("connection", "keep-alive");
-		conn.setRequestProperty("Charsert", "UTF-8");
-		conn.setRequestProperty("Content-Type", MULTIPART_FROM_DATA + ";boundary=" + BOUNDARY);
+		conn.setRequestProperty("connection","keep-alive");
+		conn.setRequestProperty("Charsert","UTF-8");
+		conn.setRequestProperty("Content-Type",MULTIPART_FROM_DATA + ";boundary=" + BOUNDARY);
 		// 首先组拼文本类型的参数
 		StringBuilder sb = new StringBuilder();
 		for (Map.Entry<String, String> entry : params.entrySet()) {
@@ -66,7 +66,7 @@ public class HttpFileUpTool {
 				byte[] buffer = new byte[1024];
 				int len = 0;
 				while ((len = is.read(buffer)) != -1) {
-					outStream.write(buffer, 0, len);
+					outStream.write(buffer,0,len);
 				}
 				is.close();
 				outStream.write(LINEND.getBytes());
@@ -89,6 +89,6 @@ public class HttpFileUpTool {
 			outStream.close();
 			conn.disconnect();
 		}
-//		return in.toString();
+		// return in.toString();
 	}
 }
