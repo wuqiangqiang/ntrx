@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 
 /*
- * ni hao!
+ * ni hao! ¹þ¹þ
  */
 public class MainActivity extends Activity {
 
