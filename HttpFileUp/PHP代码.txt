@@ -1,0 +1,15 @@
+$path = ".\\data\\downpic\\";
+foreach($_FILES['file']['name'] as $key=>$file) 
+{
+	$filename = $_FILES['file']['name'][$key];
+	$filepath = $_FILES['file']['tmp_name'][$key];
+	$filename = $path.$filename;
+	
+	if(move_uploaded_file($filepath, $filename)) {  
+	   $result = $result.$key;
+	}else{  
+	   
+	}
+}
+
+echo $result;
