@@ -11,7 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-/*
+/*µÄ
  * ni hao! ¹þ¹þ
  */
 public class MainActivity extends Activity {
