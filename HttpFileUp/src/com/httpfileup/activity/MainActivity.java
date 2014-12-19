@@ -11,7 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-/*議田  田
+/*議田 ad 
  * ni hao! 込込
  */
 public class MainActivity extends Activity {
